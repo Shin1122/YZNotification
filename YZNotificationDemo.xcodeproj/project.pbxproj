@@ -15,6 +15,8 @@
 		545F01261E914814009C6F1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545F01241E914814009C6F1F /* LaunchScreen.storyboard */; };
 		545F01311E914814009C6F1F /* YZNotificationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545F01301E914814009C6F1F /* YZNotificationDemoTests.m */; };
 		545F013C1E914814009C6F1F /* YZNotificationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 545F013B1E914814009C6F1F /* YZNotificationDemoUITests.m */; };
+		545F01531E914A54009C6F1F /* UIViewController+YZNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 545F01501E914A54009C6F1F /* UIViewController+YZNotification.m */; };
+		545F01541E914A54009C6F1F /* YZNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 545F01521E914A54009C6F1F /* YZNotification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		545F01371E914814009C6F1F /* YZNotificationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YZNotificationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		545F013B1E914814009C6F1F /* YZNotificationDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZNotificationDemoUITests.m; sourceTree = "<group>"; };
 		545F013D1E914814009C6F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		545F014F1E914A54009C6F1F /* UIViewController+YZNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YZNotification.h"; sourceTree = "<group>"; };
+		545F01501E914A54009C6F1F /* UIViewController+YZNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YZNotification.m"; sourceTree = "<group>"; };
+		545F01511E914A54009C6F1F /* YZNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZNotification.h; sourceTree = "<group>"; };
+		545F01521E914A54009C6F1F /* YZNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZNotification.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,10 @@
 		545F01151E914814009C6F1F /* YZNotificationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				545F01511E914A54009C6F1F /* YZNotification.h */,
+				545F01521E914A54009C6F1F /* YZNotification.m */,
+				545F014F1E914A54009C6F1F /* UIViewController+YZNotification.h */,
+				545F01501E914A54009C6F1F /* UIViewController+YZNotification.m */,
 				545F01191E914814009C6F1F /* AppDelegate.h */,
 				545F011A1E914814009C6F1F /* AppDelegate.m */,
 				545F011C1E914814009C6F1F /* ViewController.h */,
@@ -276,8 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545F01541E914A54009C6F1F /* YZNotification.m in Sources */,
 				545F011E1E914814009C6F1F /* ViewController.m in Sources */,
 				545F011B1E914814009C6F1F /* AppDelegate.m in Sources */,
+				545F01531E914A54009C6F1F /* UIViewController+YZNotification.m in Sources */,
 				545F01181E914814009C6F1F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +528,7 @@
 				545F01421E914814009C6F1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		545F01431E914814009C6F1F /* Build configuration list for PBXNativeTarget "YZNotificationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +537,7 @@
 				545F01451E914814009C6F1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		545F01461E914814009C6F1F /* Build configuration list for PBXNativeTarget "YZNotificationDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +546,7 @@
 				545F01481E914814009C6F1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
